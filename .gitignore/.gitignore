@@ -2,7 +2,7 @@
 .md
 
 # не игнорирует файл README.md
-!README.md 
+# !README.md 
 
 # игнорировать все каталоги с именем test
 test/
