@@ -1,4 +1,4 @@
-Задача 1
+# Задача 1
 Сценарий выполнения задачи:
 
 создайте свой репозиторий на https://hub.docker.com;
@@ -17,85 +17,98 @@ Hey, Netology
 
 
 ОТВЕТ:
+```bash
   docker ps -a  
   docker exec -it nginx-server bash  
     echo '<html><head>Hey, Netology</head><body><h1>DevOps Engineer!</h1></body></html>' > /usr/share/nginx/html/default.html
 
       docker cp nginx-server:/etc/nginx/nginx.conf nginx.conf
-
  
 > Dockerfile
 
       FROM nginx
       COPY nginx.conf /etc/nginx/nginx.conf
       RUN echo '<html><head>Hey, Netology</head><body><h1>I’m DevOps Engineer!</h1></body></html>' > /usr/share/nginx/html/default.html
+```
+      
 
 Создаем репозиторий slava1005/nginx_netology на сайте https://hub.docker.com
 Создаем image
 
+```bash
       docker build -t nginx_netology .  
       docker tag nginx_netology slava1005/nginx_netology  
       docker login -u slava1005  
       docker push slava1005/nginx_netology:latest 
-     
-      Ссылка на репозиторий https://hub.docker.com/repository/docker/slava1005/nginx_netology/general
+```
+Ссылка на репозиторий 
+https://hub.docker.com/repository/docker/slava1005/nginx_netology/general
 
-Задача 2
+# Задача 2
 Посмотрите на сценарий ниже и ответьте на вопрос: «Подходит ли в этом сценарии использование Docker-контейнеров или лучше подойдёт виртуальная машина, физическая машина? 
 Может быть, возможны разные варианты?»
 
 Детально опишите и обоснуйте свой выбор.
 
---
-    Сценарий:
+
+## Сценарий:
 Высоконагруженное монолитное java веб-приложение;
-ОТВЕТ:
+### ОТВЕТ:
 Можно использовать Docker и горизонтальное масштабирование с подсистемой балансировки нагрузки.
+
 ссылка
 https://docs.microsoft.com/ru-ru/dotnet/architecture/microservices/architect-microservice-container-applications/containerize-monolithic-applications
 Проблема монолитного приложения, в трудности развития приложения.
-    Сценарий:
+    
+## Сценарий:
 Nodejs веб-приложение;
-ОТВЕТ:
+### ОТВЕТ:
 Можно использовать Docker, очень удобное решение.
-    Сценарий:
+    
+## Сценарий:
 Мобильное приложение c версиями для Android и iOS;
-ОТВЕТ:
+### ОТВЕТ:
 ни один из вариантов, когда делают приложение для смартфонов/телефонов, всегда делают приложение для Андроид или IOS.
 Сомневаюсь что возможно сделать приложение, чтобы оно содержало в себе версии и для Андроид и для IOS, это увеличит приложение в разы. 
 Знаю, что делают приложения отдельно друг от друга.
-    Сценарий:
+
+## Сценарий:
 Шина данных на базе Apache Kafka;
-ОТВЕТ:
+### ОТВЕТ:
 Вполне можно использовать docker, противопоказаний на сайте kafka не нашел.
 ссылка: Отказоустойчивый Kafka кластер в Docker https://dotsandbrackets.com/highly-available-kafka-cluster-docker-ru/
-    Сценарий:
+
+## Сценарий:
 Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana;
-ОТВЕТ:
+### ОТВЕТ:
 Такое решение называется Elastic stack. Реализуется через Docker 
 https://rabota.dev/forum/threads/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BB%D0%BE%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-docker-%D1%81-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-elk-stack.1877/
-    Сценарий:
+
+## Сценарий:
 Мониторинг-стек на базе Prometheus и Grafana;
-ОТВЕТ:
+### ОТВЕТ:
 Можно развернуть на Докере. Плюсы: скорость развертывания, возможность масштабирования для различных задач:
-    Сценарий:
+
+## Сценарий:
 MongoDB, как основное хранилище данных для java-приложения;
-ОТВЕТ:
+### ОТВЕТ:
 docker для mongodb существует, но для продакшн систем. В случае если данных много, лучше использовать виртуальную машину.
-    Сценарий:
+
+## Сценарий:
 Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry.
-ОТВЕТ:
+### ОТВЕТ:
 Здесь также возможна реализация с помощью докера.
 статья: Докеризация производственной среды Gitlab CI / CD + эксперимент с частным облаком Docker-Registry
 https://russianblogs.com/article/47601291480/
 
-Задача 3
+# Задача 3
 Запустите первый контейнер из образа centos c любым тегом в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера.
 Запустите второй контейнер из образа debian в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера.
 Подключитесь к первому контейнеру с помощью docker exec и создайте текстовый файл любого содержания в /data.
 Добавьте ещё один файл в папку /data на хостовой машине.
 Подключитесь во второй контейнер и отобразите листинг и содержание файлов в /data контейнера.
 
+```bash
 root@slava:/data# docker run -t -d --name centos1 -v /data:/data centos
 
 docker exec -it centos1 bash
@@ -127,3 +140,4 @@ drwxr-xr-x 2 root root 4096 May 28 15:55 .
 drwxr-xr-x 1 root root 4096 May 28 15:56 ..
 -rw-r--r-- 1 root root   12 May 28 15:54 centos_docker.txt
 -rw-r--r-- 1 root root   23 May 28 15:55 host.txt
+```
