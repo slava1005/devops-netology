@@ -298,7 +298,7 @@ green open test             MtWpG3_DD_uliyAcAaFGyw 1 0  0 0   226b   226b
 ** из-за ошибок пришлось закрыть индексы, чтобы прошло восстановление
 ```
 $ curl -X POST "localhost:9200/.ds-ilm-history-5-2023.06.27-000001/_close?pretty"
-$ curl -X POST "localhost:9200/.ds-.logs-deprecation.elasticsearch-default-2023.03.27-000001/_close?pretty"
+$ curl -X POST "localhost:9200/.ds-.logs-deprecation.elasticsearch-default-2023.06.27-000001/_close?pretty"
 ```
 
 Подсказки:
