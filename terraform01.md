@@ -191,9 +191,11 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 terraform apply -auto-approve Пропускает интерактивное утверждение плана перед применением
 ```
 
+```
 root@slava:/home/slava/terraform01/01/src# docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
 3aa5d23g5f21   f9c14fe76d50   "/docker-entrypoint.…"   59 seconds ago   Up 35 seconds   0.0.0.0:8000->80/tcp   hello_world
+```
 
 Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
 
