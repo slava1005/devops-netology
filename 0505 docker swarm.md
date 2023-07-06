@@ -28,8 +28,7 @@ Overlay network - это внутренняя виртуальная сеть к
 docker node ls
 
 ```
-![dockerswarm-save1](https://github.com/slava1005/devops-netology/assets/114395964/7227cc86-dac7-4614-814f-aa2146ac2361)
-
+![dockerswarm-save1](https://github.com/slava1005/devops-netology/assets/114395964/ead8bb71-6bc2-4d05-9aec-075558b18105)
 
 ## Задача 3
 
