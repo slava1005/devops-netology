@@ -5,7 +5,8 @@
 Создать собственный образ любой операционной системы (например, ubuntu-20.04) с помощью Packer (инструкция)
 
 Для получения зачета вам необходимо предоставить скриншот страницы с созданным образом из личного кабинета YandexCloud.
- 
+
+![05-virt-04-docker-compose-1](https://github.com/slava1005/devops-netology/assets/114395964/04bb36e1-d324-419c-849e-fad2e2a01f3d)
 
 
 ## Задача 2
@@ -16,16 +17,16 @@
 Создать вашу первую виртуальную машину в YandexCloud с помощью terraform (вместо использования веб-интерфейса YandexCloud). Используйте terraform код в директории (src/terraform)
 
 Для получения зачета, вам необходимо предоставить вывод команды terraform apply и страницы свойств созданной ВМ из личного кабинета YandexCloud.
-  
 
+![savilov 05-04docker-compose-2](https://github.com/slava1005/devops-netology/assets/114395964/c0267656-9452-448b-a04d-a3199e80a426)
 
-## Задача 3
+ ## Задача 3
 
 С помощью ansible и docker-compose разверните на виртуальной машине из предыдущего задания систему мониторинга на основе Prometheus/Grafana . Используйте ansible код в директории (src/ansible)
 
 Для получения зачета вам необходимо предоставить вывод команды "docker ps" , все контейнеры, описанные в (docker-compose), должны быть в статусе "Up".
-  
 
+![savilov 05-04docker-compose-3](https://github.com/slava1005/devops-netology/assets/114395964/3fb51a6c-299e-44eb-9ff0-1cf9d17057b9)
 
 ## Задача 4 
 
@@ -34,5 +35,4 @@
 Изучите доступный интерфейс, найдите в интерфейсе автоматически созданные docker-compose панели с графиками(dashboards).
 Подождите 5-10 минут, чтобы система мониторинга успела накопить данные.
 
-
-![Ссылка 4](https://github.com/Firewal7/devops-netology/blob/main/image/05-virt-04-docker-compose-4.jpg)
+![savilov 05-04docker-compose-4](https://github.com/slava1005/devops-netology/assets/114395964/a2aee8e3-5ef2-4526-90a2-8af62f2a4d84)
