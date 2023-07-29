@@ -22,7 +22,9 @@
 
 *Ответ* <details>
 
-![](FOPS-13/Ansible 2/1_1_1.jpg)
+![1_1_1](https://github.com/slava1005/devops-netology/assets/114395964/3f7b2a43-e84c-49a4-8ff7-93ca1a0dd898)
+
+![1_1_2](https://github.com/slava1005/devops-netology/assets/114395964/0bd91e0c-928c-42bc-a9f3-f73f49f7487d)
 
 </details>
 
@@ -30,7 +32,11 @@
 
 *Ответ* <details>
 
+![1_2_2](https://github.com/slava1005/devops-netology/assets/114395964/3bbc509a-ceba-4fcf-af7d-b89a7c3b303e)
 
+![1_2_2a](https://github.com/slava1005/devops-netology/assets/114395964/74803be8-ed94-4fc3-987c-ac39735cd104)
+
+![1_2_2b](https://github.com/slava1005/devops-netology/assets/114395964/a24fea32-c59c-447f-9e16-465a87bce30e)
 
 </details>
 
@@ -38,7 +44,11 @@
 
 *Ответ* <details>
 
+![1_3_1](https://github.com/slava1005/devops-netology/assets/114395964/9debe5f4-feff-4aec-ac7f-df35f2433380)
 
+![1_3_2](https://github.com/slava1005/devops-netology/assets/114395964/57857a99-5177-4300-8b01-83be6c9d4e8a)
+
+![1_3_3](https://github.com/slava1005/devops-netology/assets/114395964/ed0a0562-abf9-48f3-9508-f6025e5d0729)
 
 </details>
 
@@ -50,7 +60,9 @@
 
 *Ответ* <details>
 
+![2_1_1](https://github.com/slava1005/devops-netology/assets/114395964/408b7d62-cfe1-4aa5-b9fe-d33a0aef4bc4)
 
+![2_1_2](https://github.com/slava1005/devops-netology/assets/114395964/f3af88a4-50e6-420e-a127-e098167f62bd)
 
 </details>
 
@@ -75,13 +87,13 @@
 
 ### Ответ
 
-Ссылка на все плейбуки и роли - https://disk.yandex.ru/d/8CNrGk6sAe0TQg
+Ссылка на все плейбуки и роли - [https://disk.yandex.ru/d/8CNrGk6sAe0TQg](https://disk.yandex.ru/d/-mqXhKR0JmQPLg)
 
 Содержание файла плейбука.
 
 <details>
 
-
+![3_1](https://github.com/slava1005/devops-netology/assets/114395964/3dc2725a-28ea-4da8-a9f6-333dbd66ffea)
 
 </details>
 
@@ -89,6 +101,7 @@
 
 <details>
 
+![3_2](https://github.com/slava1005/devops-netology/assets/114395964/a2c6e6a9-023e-4a7d-931d-681784d511b3)
 
 
 </details>
@@ -97,6 +110,7 @@
 
 <details>
 
+![3_3](https://github.com/slava1005/devops-netology/assets/114395964/211750e7-7b46-45ff-a2fe-d92008ce5150)
 
 
 </details>
@@ -105,6 +119,7 @@
 
 <details>
 
+![3_4](https://github.com/slava1005/devops-netology/assets/114395964/9647eeeb-39a1-4c2d-b151-37c117876ff5)
 
 
 </details>
@@ -113,6 +128,7 @@
   
 <details>
 
+![3_5](https://github.com/slava1005/devops-netology/assets/114395964/7b743717-b0a7-4a8b-99c1-3395ed743413)
 
 
 </details>
